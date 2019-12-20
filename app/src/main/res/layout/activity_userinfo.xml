@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#45d9d6d6"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/user_info_title_bar"
+        layout="@layout/title_bar" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#8f07010d" />
+
+    <!--如果发现无法居中，请注意是否有match_parent属性-->
+
+    <RelativeLayout
+        android:id="@+id/relate_userinfo_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d6ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/portrait"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_user_info_portrait"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/robot_portrait"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/foreward"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#8f07010d" />
+
+    <RelativeLayout
+        android:id="@+id/relate_userinfo_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d6ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nickname"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_userinfo_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/app_name"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/foreward"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#8f07010d" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#8f07010d" />
+
+    <RelativeLayout
+        android:id="@+id/relate_userinfo_signature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d6ffffff">
+
+        <TextView
+            android:id="@+id/tv_below_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signature"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tv_userinfo_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_below="@id/tv_below_signature"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="15dp"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#8f07010d" />
+
+
+
+    <Button
+        android:id="@+id/btn_exit_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_red_round_shape"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff" />
+
+
+</LinearLayout>

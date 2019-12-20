@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6a999999"
+    android:orientation="vertical">
+
+    <!--当 android:orientation="vertical"  时， 只有水平方向的设置才起作用，垂直方向的设置不起作用。即：left，right，center_horizontal 是生效的。
+当 android:orientation="horizontal" 时， 只有垂直方向的设置才起作用，水平方向的设置不起作用。即：top，bottom，center_vertical 是生效的。-->
+
+    <!--高斯模糊背景-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@mipmap/sunset">
+
+        <com.example.jakera.smartchat.Views.CircleImageView
+            android:id="@+id/civ_user_portrait"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/robot_portrait"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fffcfc" />
+
+        <TextView
+            android:id="@+id/tv_userinfo_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#d4f4f0f0"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/civ_user_portrait"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tv_fregment_userinfo_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_userinfo_username"
+            android:text="@string/app_name"
+            android:textColor="#d4f4f0f0"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/authenticatication"
+            android:layout_below="@id/tv_fregment_userinfo_signature"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#df89f7" />
+
+        <ImageView
+            android:id="@+id/iv_modify_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/modify"
+            android:backgroundTint="#fffcfc"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_recognize_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/car"
+        android:drawableRight="@mipmap/foreward"
+        style="@style/UserInfoText"
+        android:text="@string/recognize_car" />
+
+
+
+    <TextView
+        android:id="@+id/tv_recognize_animal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/monkey"
+        android:drawableRight="@mipmap/foreward"
+        style="@style/UserInfoText"
+        android:text="@string/recognize_animal"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_recognize_plant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/plant"
+        android:drawableRight="@mipmap/foreward"
+        style="@style/UserInfoText"
+        android:text="@string/recognize_plant" />
+
+
+    <TextView
+        android:id="@+id/tv_recognize_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/cabbage"
+        android:drawableRight="@mipmap/foreward"
+        style="@style/UserInfoText"
+        android:text="@string/recognize_food" />
+
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:drawableLeft="@drawable/person"-->
+    <!--android:drawableRight="@mipmap/foreward"-->
+    <!--android:paddingVertical="10dp"-->
+    <!--android:paddingHorizontal="20dp"-->
+    <!--android:background="#d6ffffff" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="#8f07010d" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_contact_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/contact"
+            android:drawableRight="@mipmap/foreward"
+            android:layout_alignParentBottom="true"
+            style="@style/UserInfoText"
+            android:text="@string/about_developer" />
+    </RelativeLayout>
+
+
+</LinearLayout>

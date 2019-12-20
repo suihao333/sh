@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/chat_activity_title_bar"
+        layout="@layout/title_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_chat_foot_bar"
+        android:layout_below="@id/chat_activity_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_chat_foot_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_voice_chat"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@drawable/voice_chat"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            />
+
+        <EditText
+            android:id="@+id/et_input_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:layout_gravity="bottom"
+            />
+
+        <com.example.jakera.smartchat.Views.AudioRecorderButton
+            android:id="@+id/id_recorder_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/str_recorder_normal"
+            android:background="@drawable/btn_recorder_normal"
+            android:minHeight="0dp"
+            android:layout_margin="4dp"
+            android:visibility="gone"
+            android:textColor="#727272" />
+
+        <ImageButton
+            android:id="@+id/btn_select_language"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:background="@drawable/chinese"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_gravity="bottom"
+            android:background="#01871e"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

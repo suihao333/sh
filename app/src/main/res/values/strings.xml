@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">智言智语</string>
+
+
+    <string name="rg_foot_btn01">聊聊</string>
+    <string name="rg_foot_btn02">好友列表</string>
+    <string name="rg_foot_btn03">看看</string>
+    <string name="rg_foot_btn04">我的</string>
+
+    <string name="send">发送</string>
+
+    <string name="str_recorder_normal">按住 说话</string>
+    <string name="str_recorder_recording">松开 发送</string>
+    <string name="str_recorder_want_cancel">松开手指，取消发送</string>
+
+
+    <string name="jumping">正在跳转</string>
+
+
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="ok">确定</string>
+    <string name="exit">退出登陆</string>
+
+    <string name="announce">%s表示你同意该软件用户服务协议和隐私政策</string>
+
+    <string name="tip_username_null">用户名不能为空！</string>
+    <string name="tip_password_null">密码不能为空!</string>
+    <string name="tip_password_not_consistent">两次输入密码不正确，请重新输入！</string>
+    <string name="register_success">注册成功！</string>
+    <string name="register_fail">注册失败!请检测网络是否连接！</string>
+    <string name="register_already">帐号已被注册</string>
+    <string name="invalid_password">密码输入错误</string>
+    <string name="login_fail">登陆失败，请检查是否正常联网</string>
+
+    <string name="permission_granted">恭喜你，授权成功</string>
+
+    <string name="about_developer">联系开发者</string>
+
+
+    <string name="portrait">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="age">年龄</string>
+    <string name="signature">个性签名</string>
+
+    <string name="login_now">正在登陆...</string>
+    <string name="person_info">个人资料</string>
+
+    <string name="modify_portrait">修改头像</string>
+    <string name="take_photo">拍照</string>
+    <string name="select_from_gallery">从手机相册中选择</string>
+    <string name="save_photo">保存图片</string>
+    <string name="cancel">取消</string>
+
+    <string name="fail_get_userinfo">获取用户信息失败</string>
+
+    <string name="add_friends">添加好友</string>
+    <string name="friend_invite_received">收到好友请求</string>
+    <string name="friend_invite_tip">想要加你为好友</string>
+    <string name="friend_invite_accept">恭喜你，添加好友成功</string>
+    <string name="friend_invite_reject">很抱歉，对方拒绝了你的请求</string>
+
+    <string name="accept">接收</string>
+    <string name="reject">拒绝</string>
+
+    <string name="modify_success">恭喜你，修改成功</string>
+
+    <string name="modify_nickname">修改昵称</string>
+    <string name="modify_signature">修改个性签名</string>
+
+    <string name="myQR">我的二维码</string>
+
+    <string name="recognize_car">车型识别</string>
+    <string name="recognize_animal">动物识别</string>
+    <string name="recognize_plant">植物识别</string>
+    <string name="recognize_food">菜品识别</string>
+
+    <string name="recognizing">正在识别......</string>
+
+    <string name="contact_author">联系作者</string>
+
+</resources>

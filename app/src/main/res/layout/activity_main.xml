@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jakera.smartchat.Activity.MainActivity"
+    android:background="#64e7e7e7">
+
+    <include
+        android:id="@+id/main_title_bar"
+        layout="@layout/title_bar" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/spilt_line"
+        android:layout_below="@id/main_title_bar"
+        android:background="#68e2dfdf"
+        />
+
+    <View
+        android:id="@+id/spilt_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#8e221122"
+        android:layout_above="@id/rg_foot_bar"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/rg_foot_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:background="#ebffffff"
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:id="@+id/rb_foot_btn01"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/message"
+            android:text="@string/rg_foot_btn01"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_foot_btn02"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/address"
+            android:text="@string/rg_foot_btn02"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_foot_btn03"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/news"
+            android:text="@string/rg_foot_btn03"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_foot_btn04"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/person"
+            android:text="@string/rg_foot_btn04"
+            />        
+    </RadioGroup>
+</RelativeLayout>
